@@ -1,6 +1,6 @@
 //类
 class Animal {
-    private name: string;
+    public name: string;
     constructor(theName: string) { this.name = theName; }
     move(distanceInMeters: number = 0) {
         console.log(`${this.name} moved ${distanceInMeters}m.`);
@@ -10,7 +10,7 @@ class Animal {
 class Snake extends Animal {
     constructor(name: string) { super(name); }
     move(distanceInMeters = 5) {
-        console.log("Slithering...");
+        console.log("Slithering..." + this.name);
         super.move(distanceInMeters);
     }
 }
@@ -29,7 +29,7 @@ let pom: Animal = new Animal("clofid");
 
 sam.move();
 tom.move(34);
-// console.log(pom.name);
+console.log(pom.name);
 
 //修饰符
 // 默认为 public

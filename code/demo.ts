@@ -1,4 +1,5 @@
 
+// 1+1 =2我们已经学会了， 掌握了基本原理，让我们看一个应用实例
 
 //把一个对象身上各个字段的Promise<T>去掉Promise
 type Depromisify<T> = Promise<{ [K in keyof T] : T[K] extends Promise<infer R> ? R : T[K]}>
