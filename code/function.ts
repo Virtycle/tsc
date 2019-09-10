@@ -1,8 +1,8 @@
 
 // 函数需要指定参数的类型和返回值的类型，没有返回值指定:void类型
 function buildName(firstName: string, lastName: string):string {
-    return firstName + " " + lastName;
-    // return 1;
+    // return firstName + " " + lastName;
+    return 1;
 }
 function buildName1(firstName: string, lastName: string):void {
     console.log(firstName + " " + lastName) ;

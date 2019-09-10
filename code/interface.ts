@@ -11,28 +11,28 @@ interface FullName {
     secondName?: string;
 }
 
-function printName(name:FullName):void {
-    console.log(name.firstName + name.secondName)
-}
-printName({
-    firstName: 'Li',
-    // secondName: 'Lei',
-    age: 12
-});
+// function printName(name:FullName):void {
+//     console.log(name.firstName + name.secondName)
+// }
+// printName({
+//     firstName: 'Li',
+//     // secondName: 'Lei',
+//     age: 12
+// });
 
-//函数接口  用于约束函数参数和返回值
+// //函数接口  用于约束函数参数和返回值
 
 interface Encrypt {
     (key: string, value: string): string;
 }
 
-let md5: Encrypt = function (a: string, b: string): string {
-    return a + b; //假设就是md5算法
-}
+// let md5: Encrypt = function (a: string, b: string): string {
+//     return a + b; //假设就是md5算法
+// }
 
-let sha1: Encrypt = function (a: string, b: string): string {
-    return a + b; //假设就是sha1算法
-}
+// let sha1: Encrypt = function (a: string, b: string): string {
+//     return a + b; //假设就是sha1算法
+// }
 
 
 //类接口  实现接口
@@ -121,6 +121,10 @@ erPigFoot.buy();
 //可索引接口  用于约束对象和数组
 interface StringArray {
     [index: number]: string;
+}
+
+class Manage implements StringArray {
+    // [1]
 }
   
 let myArray: StringArray;

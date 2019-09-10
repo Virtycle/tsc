@@ -1,4 +1,5 @@
 "use strict";
+// 1+1 =2我们已经学会了， 掌握了基本原理，让我们看一个应用实例
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
         extendStatics = Object.setPrototypeOf ||

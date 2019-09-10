@@ -1,4 +1,4 @@
-背景：   Node.js之父瑞安达尔（Ryan Dahl）发布新的开源项目 deno，从官方介绍来看，可以认为它是下一代 Node，
+背景：   Node.js之父瑞安达尔（Ryan Dahl）发布新的开源项目 deno，从官方介绍来看，可以认为它是下一代         Node，
         使用 Go 语言代替 C++ 重新编写跨平台底层内核驱动，上层仍然使用 V8 引擎，最终提供一个安全的 TypeScript 运行。
         typescript对angular和react有着优良的支持，在使用react编写代码的过程中，同时尤雨溪也在用typescript对Vue3.0进行重写。
         之前尤雨溪也在知乎上说压flow压错了宝，typescript真香https://www.zhihu.com/question/310485097/answer/591869966。

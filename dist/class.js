@@ -1,4 +1,12 @@
 "use strict";
+//类
+// class Animal {
+//     protected name: string;
+//     constructor(theName: string) { this.name = theName; }
+//     move(distanceInMeters: number = 0) {
+//         console.log(`${this.name} moved ${distanceInMeters}m.`);
+//     }
+// }
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
         extendStatics = Object.setPrototypeOf ||
@@ -12,47 +20,28 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-//类
-var Animal = /** @class */ (function () {
-    function Animal(theName) {
-        this.name = theName;
-    }
-    Animal.prototype.move = function (distanceInMeters) {
-        if (distanceInMeters === void 0) { distanceInMeters = 0; }
-        console.log(this.name + " moved " + distanceInMeters + "m.");
-    };
-    return Animal;
-}());
-var Snake = /** @class */ (function (_super) {
-    __extends(Snake, _super);
-    function Snake(name) {
-        return _super.call(this, name) || this;
-    }
-    Snake.prototype.move = function (distanceInMeters) {
-        if (distanceInMeters === void 0) { distanceInMeters = 5; }
-        console.log("Slithering...");
-        _super.prototype.move.call(this, distanceInMeters);
-    };
-    return Snake;
-}(Animal));
-var Horse = /** @class */ (function (_super) {
-    __extends(Horse, _super);
-    function Horse(name) {
-        return _super.call(this, name) || this;
-    }
-    Horse.prototype.move = function (distanceInMeters) {
-        if (distanceInMeters === void 0) { distanceInMeters = 45; }
-        console.log("Galloping...");
-        _super.prototype.move.call(this, distanceInMeters);
-    };
-    return Horse;
-}(Animal));
+// class Snake extends Animal {
+//     constructor(name: string) { super(name); }
+//     move(distanceInMeters = 5) {
+//         console.log("Slithering..." + this.name);
+//         super.move(distanceInMeters);
+//     }
+// }
+// class Horse extends Animal {
+//     constructor(name: string) { super(name); }
+//     move(distanceInMeters = 45) {
+//         console.log("Galloping...");
+//         super.move(distanceInMeters);
+//     }
+//     jump() { }
+// }
 var sam = new Snake("Sammy the Python");
 var tom = new Horse("Tommy the Palomino");
 var pom = new Animal("clofid");
 sam.move();
 tom.move(34);
-// console.log(pom.name);
+// tom.jump();
+console.log(pom.name);
 //修饰符
 // 默认为 public
 // private 不能在声明它的类的外部访问 (包括子类)

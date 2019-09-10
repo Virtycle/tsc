@@ -7,7 +7,7 @@ var list2 = [1, 2, 3];
 var list1 = [1, 2, 3]; /*数组泛型，Array<元素类型> */
 // 元祖 ---已知元素数量和类型的数组，各元素的类型不必相同
 var x;
-x = ['hello', 10];
+x = ['hello', 12];
 console.log(x);
 // 注意： ts只会在编译前报错，单不会阻止编译
 //枚举
@@ -17,14 +17,16 @@ console.log(x);
 // } z括弧里可以不写 默认从 0开始
 var Color;
 (function (Color) {
-    Color[Color["Red"] = 0] = "Red";
-    Color[Color["Green"] = 1] = "Green";
-    Color[Color["Blue"] = 2] = "Blue";
+    Color[Color["Red"] = 2] = "Red";
+    Color[Color["Green"] = 5] = "Green";
+    Color[Color["Blue"] = 7] = "Blue";
 })(Color || (Color = {}));
 // 取下标
 var c = Color.Green;
+console.log(c);
 // 取标识符
 var colorName = Color[2];
+console.log(colorName);
 //Any 任意类型 放弃了类型校验
 var notSure = 4;
 notSure = "maybe a string instead";

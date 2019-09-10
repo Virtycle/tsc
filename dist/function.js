@@ -1,8 +1,8 @@
 "use strict";
 // 函数需要指定参数的类型和返回值的类型，没有返回值指定:void类型
 function buildName(firstName, lastName) {
-    return firstName + " " + lastName;
-    // return 1;
+    // return firstName + " " + lastName;
+    return 1;
 }
 function buildName1(firstName, lastName) {
     console.log(firstName + " " + lastName);

@@ -6,7 +6,7 @@ let list2: number[] = [1, 2, 3];
 let list1: Array<number> = [1, 2, 3]; /*数组泛型，Array<元素类型> */
 // 元祖 ---已知元素数量和类型的数组，各元素的类型不必相同
 let x: [string, number];
-x = ['hello', 10];
+x = ['hello', 12];
 console.log(x)
 
 
@@ -18,11 +18,14 @@ console.log(x)
 //     标识符[=整型常数],
 //     标识符[=整型常数],
 // } z括弧里可以不写 默认从 0开始
-enum Color {Red, Green, Blue}
+enum Color {Red=2, Green=5, Blue=7}
 // 取下标
 let c: Color = Color.Green;
+console.log(c)
 // 取标识符
 let colorName: string = Color[2];
+console.log(colorName)
+
 
 //Any 任意类型 放弃了类型校验
 let notSure: any = 4;
